@@ -64,7 +64,6 @@ class TicTacToe
       move(a, current_player)
       display_board
     else
-      binding.pry
       turn
     end
   end
