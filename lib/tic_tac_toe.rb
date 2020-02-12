@@ -1,3 +1,4 @@
+require 'pry'
 class TicTacToe 
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
@@ -55,6 +56,7 @@ class TicTacToe
     puts "Please enter 1-9"
     input = gets
     a = input_to_index(input)
+    binding.pry
     if valid_move?(a) == true
       move(a, current_player)
       display_board
