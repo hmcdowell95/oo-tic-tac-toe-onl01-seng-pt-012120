@@ -59,7 +59,7 @@ class TicTacToe
       move(a, current_player)
       display_board
     else
-      
+      turn
     end
   end
   def won?
