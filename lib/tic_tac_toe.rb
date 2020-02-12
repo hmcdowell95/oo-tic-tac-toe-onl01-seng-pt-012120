@@ -56,11 +56,11 @@ class TicTacToe
     puts "Please enter 1-9"
     input = gets
     a = input_to_index(input)
-    binding.pry
     if valid_move?(a) == true
       move(a, current_player)
       display_board
     else
+      binding.pry
       turn
     end
   end
